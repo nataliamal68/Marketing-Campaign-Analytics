@@ -46,3 +46,4 @@ UX/UI: Designed with a consistent color palette and "Card" visuals for immediate
 
 You can inspect the data model and DAX measures by downloading the source file below.
 (Note: Data has been download from open source)
+[Download .pbix file](./Marketing_Campaign.pbix)
