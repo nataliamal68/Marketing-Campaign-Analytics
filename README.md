@@ -1,49 +1,35 @@
-# Marketing Campaign & Customer Analysis 📊
+# Marketing Campaign & Customer Analysis
 
-🚀 The Challenge
+# The Challenge 
+The marketing team relied on static Excel sheets and struggled to link campaign costs with actual revenue. They couldn't see which customer demographics were driving sales, which led to inefficient budget spending.
 
-The marketing team was struggling to correlate campaign costs with actual revenue using static Excel sheets. They lacked visibility into which customer demographics were actually driving sales, leading to inefficient budget allocation.
+# The Solution 
+I replaced the manual spreadsheets with a centralized Power BI analytical suite. I used Power Query to clean and transform raw Excel data, creating a reliable automated flow.
 
-💡 The Solution
-
-I built a centralized Power BI analytical suite comprising two dashboards: Customer Segmentation and Campaign Performance. The solution ingests data from Excel, transforms it via Power Query, and utilizes complex DAX measures to calculate real-time ROI.
-
-🔍 Dashboard 1: Customer Segmentation
-
-Goal: Understand who our best customers are.
+# Dashboard 1: Customer Segmentation Goal: Identify our most valuable customer groups.
 
 Key Insights:
 
-Income vs. Status: Identified that while "PhD" holders earn more on average, the "Married" segment drives the highest total volume of sales.
+Income vs. Status: The data showed that while PhD holders earn more, the "Married" segment actually generates the highest sales volume.
 
-Product Preferences: The heatmap revealed a strong correlation between the "Single" status and "Electronics/Gadgets" purchases (simulated data).
+Product Preferences: A heatmap revealed a strong correlation between "Single" customers and "Electronics" purchases.
 
-Demographic Filtering: Enabled dynamic slicers (Age 24-80) allowing the team to isolate specific generations (Gen Z vs. Boomers).
+Demographic Filtering: I added dynamic slicers (Age 24-80) to let the team easily compare generations (e.g., Gen Z vs. Boomers).
 
-📈 Dashboard 2: Campaign ROI Tracker
-
-Goal: Track where the money is going and what brings it back.
+# Dashboard 2: Campaign ROI Tracker Goal: Track marketing spend efficiency.
 
 Key Features:
 
-Real-time ROI: Calculated that revenue is currently ~3x the campaign cost.
+Real-time ROI: Shows that revenue is currently ~3x higher than the campaign cost.
 
-Smart Narratives: Implemented dynamic text boxes that automatically generate sentences like "Families with no children responded better to the campaign" based on the underlying data context.
+Smart Narratives: I added dynamic text summaries to help non-technical stakeholders instantly understand key trends (e.g., "Families responded better to this campaign") without analyzing charts deeply.
 
-Success Rate KPI: A visual gauge showing a 15.10% conversion rate against the 20% target.
+Success Rate KPI: A clear visual gauge showing a 15.1% conversion rate against the 20% target.
 
-🛠️ Technical Implementation Details
+# Technical Implementation
 
-Data Modelling: Built a Star Schema model to ensure high performance and correct filtering direction.
+Data Modelling: Built a Star Schema to ensure fast performance and correct filtering logic.
 
-DAX Measures: Used CALCULATE, DIVIDE (for safe division), and Time Intelligence functions to compare performance periods.
+DAX: Used CALCULATE and Time Intelligence functions to compare performance across different periods.
 
-UX/UI: Designed with a consistent color palette and "Card" visuals for immediate readability on mobile devices.
-
-
-
-📥 Try it yourself
-
-You can inspect the data model and DAX measures by downloading the source file below.
-(Note: Data has been download from open source)
-[Download .pbix file](./Marketing_Campaign.pbix)
+UX/UI: Designed with a consistent color palette and "Card" visuals to ensure the report is readable on mobile devices.
